@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-bg{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)) , url("hero.png");
+}
+.responsive-btn {
+    min-width: 150px; 
+    margin: 5px 0; 
+  }
+  
+  @media (max-width: 576px) {
+    .responsive-btn {
+      font-size: 14px; 
+      padding: 10px 20px;
+    }
+  }
+  
+.custom-modal .modal-content {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white; 
+  }
+  
+  .custom-modal .modal-header,
+  .custom-modal .modal-footer {
+    background-color: rgba(0, 0, 0, 0.9); 
+  }
+  
+  .custom-modal .modal-header .close {
+    color: white;
+  }
+  
+ 
+  .custom-modal .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7) !important; 
+  }
+
+.custom-modal .modal-footer .btn {
+    border-radius: 100; 
+    padding: 10px 20px;
+    font-weight: bold;
+    min-width: 100px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+ 
+  .custom-modal .modal-footer .btn-outline-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  
+  .custom-modal .modal-footer .btn-outline-danger:hover {
+    background-color: #c82333;
+  }
+  
+  .custom-modal .modal-footer .btn-outline-info {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+  }
+  
+  .custom-modal .modal-footer .btn-outline-info:hover {
+    background-color: #138496;
+  }
+  
+  .custom-modal .modal-footer .btn-outline-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    
+    
+  }
+  
+  .custom-modal .modal-footer .btn-outline-primary:hover {
+    background-color: #0069d9;
+  }
+  
+ 
+  .custom-modal .modal-header .btn-close {
+    background-color: white; 
+    color: black;  
+    border-radius: 50%; 
+    width: 35px;  
+    height: 35px;
+  }
+  
+  .custom-modal .modal-header .btn-close:hover {
+    background-color: #f8f9fa; 
+    color: black;
+  }
+  
+  .custom-modal .modal-header .modal-title {
+    color: white;
+  }
+  
+
+  .custom-modal .modal-footer .btn {
+    margin-right: 10px;
+  }
+  
+  .custom-modal .modal-footer .btn .me-2 {
+    margin-right: 5px;
+  }
+  
+  .modal-header .close {
+    color: white;
+    background-color: transparent;
+    border: none;
+  }
+  .category-title{
+    margin: 0;
+    padding: 0;
+  }
+ 
+.custom-navbar-toggler .navbar-toggler-icon {
+    background-color: white !important;
+  }
+  
+ 
+  input::placeholder {
+    color: gray
+     !important;
+  }
+  
+  
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  
+  .spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3); 
+    border-top: 8px solid #d11919; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+  }
+  
+ 
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
