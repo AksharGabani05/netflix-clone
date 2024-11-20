@@ -1,8 +1,32 @@
 # React + Vite
+A responsive Netflix-inspired web application built with modern technologies, showcasing trending movies, TV shows, and user interactions.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📜 Features
+User Authentication: Sign up, log in
+Dynamic Movie Data: Fetches Movies Data 
+Trending Movies: Displays trending and top-rated movies.
+Categories: Browse movies by genres.
+Responsive Design: Fully functional on mobile, tablet, and desktop.
 
-Currently, two official plugins are available:
+💻 Tech Stack
+Frontend: React.js, CSS Modules/Styled-Components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Installation
+
+git clone https://github.com/AksharGabani05/netflix-clone.git
+
+cd netflix-clone  
+
+npm install  
+
+npm start  
+
+🌐 Live Demo : https://netflix-clone-olive-zeta-46.vercel.app/
+
+📧 Contact
+For any inquiries, reach out at:
+
+Email: akshargabani9425@gmail.com
+GitHub: AksharGabani05
+
+
