@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import { FaPlay, FaHeart, FaPlus, FaInfoCircle } from 'react-icons/fa'; // Social Icons
-import { Modal, Button } from 'react-bootstrap'; // Import Modal components
-import './Poster.css'; // Custom CSS for advanced styles
+import { FaPlay, FaHeart, FaPlus, FaInfoCircle } from 'react-icons/fa';
+import { Modal, Button } from 'react-bootstrap';
+import './Poster.css'; 
 
 const Poster = () => {
-  const [showModal, setShowModal] = useState(false); // For controlling modal visibility
-  const [movieDetails, setMovieDetails] = useState(null); // Store selected movie details
+  const [showModal, setShowModal] = useState(false); 
+  const [movieDetails, setMovieDetails] = useState(null);
 
   const categories = [
     { title: 'Popular on Netflix', images: ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10', 'p11', 'p12'] },
@@ -16,7 +16,7 @@ const Poster = () => {
     { title: 'Netflix Originals', images: ['o1', 'o2', 'o3', 'o4', 'o5', 'o6'] },
   ];
 
-  // Slick slider settings
+  
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -50,14 +50,13 @@ const Poster = () => {
   };
 
   const handleImageClick = (imageName) => {
-    // Set the movie details based on the clicked image
     const movieInfo = {
       title: `Movie: ${imageName}`,
       description: `Details about the movie: ${imageName}`,
       imageUrl: `https://github.com/carlosavilae/Netflix-Clone/blob/master/img/${imageName}.PNG?raw=true`,
     };
     setMovieDetails(movieInfo);
-    setShowModal(true); // Open the modal
+    setShowModal(true); 
   };
 
   return (
@@ -80,8 +79,6 @@ const Poster = () => {
           </div>
         ))}
       </section>
-
-      {/* Modal to show movie details with a black background */}
       {movieDetails && (
         <Modal
           show={showModal}
