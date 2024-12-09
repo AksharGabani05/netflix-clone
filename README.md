@@ -24,8 +24,6 @@ npm start
 🌐 Live Demo : https://netflix-clone-olive-zeta-46.vercel.app/
 
 📧 Contact
-For any inquiries, reach out at:
-
 Email: akshargabani9425@gmail.com
 GitHub: AksharGabani05
 
